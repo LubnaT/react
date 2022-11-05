@@ -10,14 +10,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body  class="m-0 min-h-full block">
+<body  class="m-0 min-h-full block ">
 
     <!-- heading navbar -->
 <header class="flex static font-sans">
-    <div class="bg-[#232f3e] flex flex-col shrink relative top-0 left-0 min-w-[1000px]">
+    <div class="bg-[#232f3e] flex flex-col z-40 shrink relative top-0 left-0 min-w-[1000px]">
         <!-- 1st navbar -->
         <!-- left side -->
-        <div class="bg-[#131921] flex flex-row w-screen relative top-0 sticky top-0 h-[80px]">
+        <div class="bg-[#131921] flex flex-row w-screen relative top-0 fixed top-0 h-[80px] z-10">
             <!-- amazonlogo -->
             <div class="flex ml-[20px] items-center h-[80px]">
                <a class="hover:border-2 border-white border-solid h-[70px]" href="https://www.amazon.in/ref=nav_logo">
@@ -134,7 +134,7 @@
                         <a class="hover:border-2 border-white border-solid w-[170px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Home & Kitchen</a>
                         <a class="hover:border-2 border-white border-solid w-[80px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Fashion</a>
                         <a class="hover:border-2 border-white border-solid w-[80px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Books</a>
-                        <a class="hover:border-2 border-white border-solid w-[80px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Prime</a>
+                        <a class="hover:border-2 border-white border-solid w-[90px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Prime</a>
                     </div>
                 </div>
             </div>
@@ -150,12 +150,75 @@
 
 <!-- End of header  -->
 
-<div class="h-full w-full flex shrink grow ">
-    <div class="h-[500px] w-full flex">
+<!-- body part -->
+<div class="h-screen w-screen bg-[#EAEDED] shrink grow block">
+      <!-- image div  -->
         <div class="h-[500px] w-[100%]">
             <img class="h-[500px] w-[100%]" src="/amazonImage/imagefirst.jpg">
         </div>
-    </div>
+        
+         <!-- start of Cards  -->
+    <div class="h-[900px] w-[100%] bg-[#EAEDED] flex block">
+
+        <div class="flex flex-row mx-[20px] my-[20px] grid grid-col-4 grid-row-1 w-[100%] h-[450px]">
+            <div class="flex space-y-2 max-w-max h-[450px] gap-4 cursor-pointer drop-shadow-md">
+                <div class="flex flex-col hover:bg-pink-100 bg-white rounded-md p-4">
+                 <h1 class="text-2xl font-bold">Revamp your home in style</h1>
+                 <a class="h-auto pt-2"><img class="h-[330px] w-[380px]" src="/amazonImage/home.jpeg" >
+                   <div class="h-10 mt-[15px] text-center">
+                    <span class="text-md text-[#007185] items-end">Explore All</span>
+                   </div>
+                 </a>
+                </div>
+
+                <div class="flex flex-col hover:bg-pink-100 bg-white rounded-md p-4">
+                    <h1 class="text-2xl font-bold">Up to 60% off | Styles for Women</h1>
+                    <a class="h-auto pt-2"><img class="h-[320px] w-[380px]" src="/amazonImage/women.jpg" >
+                      <div class="h-10 mt-[15px] text-center">
+                       <span class="text-md text-[#007185] items-end">Explore All</span>
+                      </div>
+                    </a>
+                   </div>
+
+                   <div class="flex flex-col hover:bg-pink-100 bg-white rounded-md p-4">
+                    <h1 class="text-2xl font-bold">Shop & Pay | Earn rewards daily</h1>
+                    <a class="h-auto pt-2"><img class="h-[320px] w-[380px]" src="/amazonImage/reward.jpg" >
+                      <div class="h-10 mt-[15px] text-center">
+                       <span class="text-md text-[#007185] items-end">Explore All</span>
+                      </div>
+                    </a>
+                   </div>
+
+                   <div class="flex flex-col hover:bg-pink-100 bg-white rounded-md p-4">
+                    <h1 class="text-2xl font-bold">Up to 60% off | Styles for Men</h1>
+                    <a class="h-auto pt-2"><img class="h-[320px] w-[380px]" src="/amazonImage/mens.jpg" >
+                      <div class="h-10 mt-[15px] text-center">
+                       <span class="text-md text-[#007185] items-end">Explore All</span>
+                      </div>
+                    </a>
+                   </div>
+
+            </div>
+        </div>
+        <!-- End of cards -->
+
+        <!-- Best seller section  -->
+        <div>
+            <!-- heading  -->
+            <div>
+
+            </div>
+            <!-- cards  -->
+            <div>
+
+            </div>
+        </div>
+
+
+
+     </div>
+    
+
 </div>
 
     
