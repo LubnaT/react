@@ -126,8 +126,8 @@
                 <div class="flex shrink grow w-[500px]">
                     <div class="flex flex-row shrink grow flex-wrap overflow-hidden w-[500px]"> 
                         <a class="hover:border-2 border-white border-solid w-[60px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Sell</a>
-                        <a class="hover:border-2 border-white border-solid w-[120px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px]  h-[34px] text-white text-lg">Best Sellers</a>
-                        <a class="hover:border-2 border-white border-solid w-[130px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Today's Deal</a>
+                        <a href="#bestseller" class="hover:border-2 border-white border-solid w-[120px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px]  h-[34px] text-white text-lg">Best Sellers</a>
+                        <a href="#todaysdeal" class="hover:border-2 border-white border-solid w-[130px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Today's Deal</a>
                         <a class="hover:border-2 border-white border-solid w-[90px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Mobiles</a>
                         <a class="hover:border-2 border-white border-solid w-[170px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Customer Service</a>
                         <a class="hover:border-2 border-white border-solid w-[120px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Electronics</a>
@@ -158,7 +158,7 @@
         </div>
         
          <!-- start of Cards  -->
-    <div class="h-[500px] w-[100%] bg-[#EAEDED] flex block">
+    <div class="h-[500px] w-[100%] bg-[#EAEDED]  block">
 
         <div class="flex flex-row mx-[20px] my-[20px] grid grid-col-4 grid-row-1 w-[100%] h-[450px]">
             <div class="flex space-y-2 max-w-max h-[450px] gap-4 cursor-pointer drop-shadow-md">
@@ -203,17 +203,159 @@
         <!-- End of cards -->
 
         <!-- Best seller section  -->
-        <div class="h-[500px] w-[100%] bg-[#EAEDED] flex block">
-            <!-- heading  -->
-            <div>
+        <div class="h-[600px] w-[100%] bg-white flex block mx-[20px]">
+            <div class="h-auto width-auto my-[5px] mx-[5px]">
+                 <!-- heading  -->
+              <div id="bestseller" class="h-[60px] ml-[20px]">
+                 <h1 class="text-start text-3xl font-bold p-4">Best Sellers</h1>
+               </div>
+                <!-- cards  -->
+                <div class="h-[500px] w-auto group grid grid-col-5 flex flex-row grid-row-1 ">
+                 <div class="flex gap-4 max-w-max h-[450px] space-y-2 drop-shadow-md">
 
-            </div>
-            <!-- cards  -->
-            <div>
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[330px] w-[380px]" src="/amazonImage/lamp.jpg">
+                        <h2 class="text-lg font-semibold">Lamp</h2>
+                        <P><span class="items-center text-lg font-semibold">Rs 300.00</span></P>
+                        <div class="h-[60px] group flex-col flex mt-[15px] p-4">
+                            <span class=" ml-[35px] justify-self-center">
+                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            </span>
+                            <span class="mt-[20px] ml-[35px] ">                          
+                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                           </span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[320px] w-[380px]" src="/amazonImage/sweter.jpg">
+                        <h2 class="text-lg font-semibold">Sweater</h2>
+                        <P><span class="items-center text-lg font-semibold">Rs 1000.00</span></P>
+                        <div class="h-[60px] group flex-col flex mt-[15px] p-4">
+                            <span class=" ml-[35px] justify-self-center">
+                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            </span>
+                            <span class="mt-[20px] ml-[35px] ">                          
+                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                           </span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[320px] w-[380px]" src="/amazonImage/couch.jpg">
+                        <h2 class="text-lg font-semibold">Luxurious Sofa</h2>
+                        <P><span class="items-center text-lg font-semibold">Rs 50000.00</span></P>
+                        <div class="h-[60px] group flex-col flex mt-[15px] p-4">
+                            <span class=" ml-[35px] justify-self-center">
+                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            </span>
+                            <span class="mt-[20px] ml-[35px] ">                          
+                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                           </span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[320px] w-[380px]" src="/amazonImage/shoes.jpg">
+                        <h2 class="text-lg font-semibold">Shoes</h2>
+                        <P><span class="items-center text-lg font-semibold">Rs 600.00</span></P>
+                        <div class="h-[60px] group flex-col flex mt-[15px] p-4">
+                            <span class=" ml-[35px] justify-self-center">
+                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            </span>
+                            <span class="mt-[20px] ml-[35px] ">                          
+                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                           </span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[450px] w-[380px]" src="/amazonImage/keyboard.jpg">
+                        <h2 class="text-lg font-semibold">Keyboard</h2>
+                        <P><span class="items-center text-lg font-semibold">Rs 600.00</span></P>
+                        <div class="h-[60px] group flex-col flex mt-[15px] p-4">
+                            <span class=" ml-[35px] justify-self-center">
+                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            </span>
+                            <span class="mt-[20px] ml-[35px] ">                          
+                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                           </span>
+                        </div>
+                    </div>
+                 
+                 </div>
+              </div>
 
             </div>
         </div>
+        <!-- end of bestseller -->
 
+        <!-- start of todays deal  -->
+        <div class="h-[600px] w-[100%] bg-white flex block mx-[20px]">
+            <div id="todaysdeal" class="h-auto width-auto my-[5px] mx-[5px]">
+                 <!-- heading  -->
+              <div id="bestseller" class="h-[60px] ml-[20px]">
+                 <h1 class="text-start text-3xl font-bold p-4">Today's Deal <span class=" py-[30px] text-sm text-[#007185] items-end">Explore All</span></h1>
+               </div>
+                <!-- cards  -->
+                <div class="h-[500px] w-auto group grid grid-col-5 flex flex-row grid-row-1 ">
+                 <div class="flex gap-4 max-w-max h-[450px] space-y-2 drop-shadow-md">
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[330px] w-[380px]" src="/amazonImage/laptop.jpg">
+                        <div class="flex ">
+                        <span class="mt-[20px] ">
+                            <button class="h-[40px] w-[140px] items-start text-lg text-white bg-[#CC0C39]">Up to 30% off</button>
+                        </span>
+                        <span class=" mt-[25px] ml-[20px] justify-self-center text-[#CC0C39] text-white text-lg font-semibold"><p class="">Deal of the Day</p></span>
+                       </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[330px] w-[380px]" src="/amazonImage/camera.jpg">
+                        <div class="flex ">
+                        <span class="mt-[20px] ">
+                            <button class="h-[40px] w-[140px] items-start text-lg text-white bg-[#CC0C39]">Up to 50% off</button>
+                        </span>
+                        <span class=" mt-[25px] ml-[20px] justify-self-center text-[#CC0C39] text-white text-lg font-semibold"><p class="">Deal of the Day</p></span>
+                       </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[330px] w-[380px]" src="/amazonImage/router.jpg">
+                        <div class="flex ">
+                        <span class="mt-[20px] ">
+                            <button class="h-[40px] w-[140px] items-start text-lg text-white bg-[#CC0C39]">Up to 40% off</button>
+                        </span>
+                        <span class=" mt-[25px] ml-[20px] justify-self-center text-[#CC0C39] text-white text-lg font-semibold"><p class="">Deal of the Day</p></span>
+                       </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[330px] w-[380px]" src="/amazonImage/printer.jpg">
+                        <div class="flex ">
+                        <span class="mt-[20px] ">
+                            <button class="h-[40px] w-[140px] items-start text-lg text-white bg-[#CC0C39]">Up to 30% off</button>
+                        </span>
+                        <span class=" mt-[25px] ml-[20px] justify-self-center text-[#CC0C39] text-white text-lg font-semibold"><p class="">Deal of the Day</p></span>
+                       </div>
+                    </div>
+
+                    <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+                        <img class="h-[330px] w-[380px]" src="/amazonImage/sliper.jpg">
+                        <div class="flex ">
+                        <span class="mt-[20px] ">
+                            <button class="h-[40px] w-[140px] items-start text-lg text-white bg-[#CC0C39]">Up to 30% off</button>
+                        </span>
+                        <span class=" mt-[25px] ml-[20px] justify-self-center text-[#CC0C39] text-white text-lg font-semibold"><p class="">Deal of the Day</p></span>
+                       </div>
+                    </div>
+                 
+                 </div>
+              </div>
+
+            </div>
+        </div>
 
 
      </div>
