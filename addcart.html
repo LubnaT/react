@@ -154,17 +154,42 @@
 <!-- body part  -->
 <div class="h-screen w-screen bg-[#EAEDED] shrink grow block">
 
-    <div class="h-[600px] w-[100%] justify-center items-center bg-white mx-[30px] my-[70px]">
+    <!-- <div class="h-[600px] w-[100%] justify-center items-center bg-white mx-[30px] my-[70px]">
         <div class="h-[500px] w-[100%] items-center justify-center">
             <h1 class="items-center justify-center place-self-holder h-auto w-auto"><span class="ml-[200px] mt-[300px] text-3xl text-bold text-center items-center">Your Amazon Cart is Empty</span></h1>
         <a href="#todaysdeal"><span class="text-center text-md text-[#007185] ml-[200px] mt-[300px]">Shop today's deal</span></a>
-
         </div>
-    </div>
+    </div> -->
+      
+     <!-- cards  -->
+     <div class="h-[500px] w-auto group grid grid-col-5 flex flex-row grid-row-1 ">
+        <div class="flex gap-4 max-w-max h-[450px] space-y-2 drop-shadow-md mt-[50px] ml-[60px]">
+
+           <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+               <img class="h-[330px] w-[380px]" src="/amazonImage/lamp.jpg">
+               <h2 class="text-lg font-semibold">Lamp</h2>
+               <P><span class="items-center text-lg font-semibold">Rs 300.00</span></P>
+           </div>
+
+           <div class="flex flex-col group p-4 h-[450px] max-w-max  bg-pink-100 rounded-md hover:bg-orange-100">
+               <img class="h-[320px] w-[380px]" src="/amazonImage/sweter.jpg">
+               <h2 class="text-lg font-semibold">Sweater</h2>
+               <P><span class="items-center text-lg font-semibold">Rs 1000.00</span></P>
+           </div>
+
+           </div>
+           </div>
+
+           <div class="h-[60px] flex mt-[50px] p-4">
+            <span class="ml-[370px]">
+            <button  onclick='temp()' class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600 drop-shadow-lg">Buy</button>
+            </span>
+        </div>
+
 
 </div>
     
 
-<script src="./amazon.js"></script>
+    <script src="./amazon.js"></script>
 </body>
 </html>
