@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <!-- title logo -->
+    <link rel="icon" href="amazonImage/alogo.png" type="image">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  class="m-0 min-h-full block ">
+    <!-- javascript -->
+   <script src="./amazon.js"></script>
+
+   <!-- heading navbar -->
+<header class="flex static font-sans">
+   <div class="bg-[#232f3e] flex flex-col z-40 shrink relative top-0 left-0 min-w-[1000px]">
+       <!-- 1st navbar -->
+       <!-- left side -->
+       <div class="bg-[#131921] flex flex-row w-screen relative top-0 fixed top-0 h-[80px] z-10">
+           <!-- amazonlogo -->
+           <div class="flex ml-[20px] items-center h-[80px]">
+              <a class="hover:border-2 border-white border-solid h-[70px]" href="https://www.amazon.in/ref=nav_logo">
+               <img class=" mt-[10px] ml-[20px]w-[150px] h-[50px]" src="amazonImage/amazonlogo.PNG">
+              </a>
+           </div>
+           <!-- Hello address location -->
+           <div class="flex shrink grow m-0 h-[80px] block">
+               <span class="h-[70px]">
+                   <a class="flex flex-row h-[70px] mt-[5px] ml-[4px] mb-[5px] w-fit block hover:border-2 border-white border-solid">
+                       <div class="flex items-end ml-[10px] mb-[8px]">
+                         <img class="w-[35px] h-[35px]" src="amazonImage/locationlogo.PNG">
+                       </div>
+                       <div class="flex flex-col mt-[10px]">
+                           <span class="text-[#d6d6d6] inline block text-md mb-0">Hello</span>
+                           <span class="text-[#fff] inline block text-lg pb-[4px] pt-0 font-semibold">Select your address</span>
+                       </div>
+                   </a>
+               </span>
+           </div>
+
+           <!-- Input field -->
+           <div class="h-[55px] w-[100px] flex flex-row ml-0 mr-[1150px] shrink  grow">
+              <div class="h-[55px] py-[10px] pr-[3px] pl-[4px] flex shrink grow">
+               <form class="h-[55px] flex shrink grow rounded bg-white border-2 border-solid border-[rgb(133, 133, 133)]">
+                   <div  class="h-[55px] flex shrink w-[60px] items-center overflow-hidden">
+                       <select class=" block border-2 border-solid border-[rgb(133, 133, 133)] overflow-hidden h-[52px]">
+                           <option class="block h-5 px-[2px] pb-[1px] font-semibold text-lg pb-[3px]">All>> </option>
+                           <option class="block h-5 px-[2px] pb-[1px]">Amazon Devices</option>
+                           <option class="block h-5 px-[2px] pb-[1px]">Amazon Fashion</option>
+                           <option class="block h-5 px-[2px] pb-[1px]">Alexa Skills</option>
+
+                       </select>
+                   </div>
+                   <div class="h-[52px] flex shrink grow max-w-max items-center  ">
+                       <input type="text" placeholder="Search" class="flex pl-[4px] pt-[6px] w-[600px] pt-[7px] pr-[10px] pb-[10px] h-[52px] text-[15px] ">
+                   </div>
+                   <div class="bg-[#febd69] flex w-[60px] h-[52px] block overflow-hidden">
+                       <img class=" mt-[10px] ml-[14px] w-[30px] h-[30px]" src="amazonImage/search.PNG">
+                   </div>  
+               </form>
+           </div>
+           </div>
+
+           <!-- language, signin, cart -->
+           <div class="h-[60px] w-[90px] absolute top-0 right-[450px] relative top-0 flex">
+               <div class="mt-[10px] pt-[3px] h-[58px] ">
+                   <a class="ml-[1px] pl-[9px] pb-[5px] flex text-white h-[58px] items-center hover:border-2 border-white border-solid">
+                       <span><select class=" h-[50px] items-center flex bg-[#131921]">
+                           <option class="items-center text-white flex font-semibold">English</option>
+                           <option class="items-center text-white flex font-semibold">Hindi</option>
+                           <option class="items-center text-white flex font-semibold">Arabic</option>
+                           <option class="items-center text-white flex font-semibold">French</option>
+                       </select>
+                   </span>
+                   </a>
+
+                   <a class="flex w-[180px] flex-col absolute top-[10px] left-[100px] px-[9px] mr-[500px] pb-[10px] overflow-hidden h-[58px] ">
+                       <div class=" h-[58px] hover:border-2 border-white border-solid">
+                       <div class="mt-[9px] h-[14px] flex items-center w-full text-[#d6d6d6] text-[14px]">
+                           <span class="flex items-center h-[14px] text-[16px] ">Hello, Sign in</span>
+                       </div>
+                       <div>
+                       <span class="flex item-center text-lg text-white font-semibold">Accounts & Lists</span>
+                      </div>
+                      </div>
+                   </a>
+
+                   <a class="flex w-[110px] flex-col absolute top-[10px] left-[270px] px-[9px] mr-[500px] pb-[10px] overflow-hidden h-[58px] ">
+                       <div class=" h-[58px] hover:border-2 border-white border-solid">
+                       <div class="mt-[9px] h-[14px] flex items-center w-full text-[#d6d6d6] text-[14px]">
+                           <span class="flex items-center h-[14px] text-[16px] font-semibold">Returns</span>
+                       </div>
+                       <div>
+                       <span class="flex item-center text-lg text-white font-semibold">& Orders</span>
+                      </div>
+                      </div>
+                   </a>
+
+                   <a class="flex w-[110px] flex-col absolute top-[10px] left-[370px] px-[9px] mr-[500px] pb-[10px] overflow-hidden h-[58px] ">
+                       <div class=" h-[58px] hover:border-2 border-white border-solid relative top-0 flex flex-col mt-0">
+                       <div class="mt-[0px] h-[50px] w-[60px] flex items-center w-full font-bold">
+                           <span id="itemsnotifi" class="mt-0 flex items-center h-[30px] w-[30px] text-center text-[#f08804] text-[20px] font-semibold absolute left-[13px] top-[0px] right-[18px] bottom-[4px] justify-center">0</span>
+                           <span class="mt-0 flex item-center w-[60px] h-[40px] absolute left-[4px] top-[9px] bottom-[7px]"><img class="object-fit w-[60px] h-[60px]" src="https://www.freeiconspng.com/thumbs/cart-icon/cart-icon-16.png"></span>
+                       </div>
+                       <div class="flex justify-end items-start text-[14px]">
+                       <span class="flex item-center text-[18px] text-white pl-[10px] font-bold">Cart</span>
+                      </div>
+                      </div>
+                   </a>
+               </div>
+           </div>
+       </div>
+        <!-- end of 1st navbar -->
+
+        <!-- 2nd navbar -->
+        <div class="flex flex-row h-[50px] bg-[#232f3e] w-[100%]">
+           <div class="flex h-[50px] ml-[25px] justify-center w-[60px]">
+               <a class="flex hover:border-2 border-white border-solid items-center justify-center h-[35px] px-[8px] py-[9px] mt-[10px] text-white"> 
+                   <i class="flex"><img class="w-[20px] h-[20px]" src="" alt=""></i>
+                   <span class="mr-[19px] mt-[5px] text-lg font-bold item-center justify-self-center h-[40px]">All</span>
+               </a>
+           </div>
+
+           <div class="ml-[20px] flex shrink grow overflow-hidden h-[50px] w-[900px]">
+               <div class="flex shrink grow w-[500px]">
+                   <div class="flex flex-row shrink grow flex-wrap overflow-hidden w-[500px]"> 
+                       <a class="hover:border-2 border-white border-solid w-[60px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Sell</a>
+                       <a href="#bestseller" class="hover:border-2 border-white border-solid w-[120px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px]  h-[34px] text-white text-lg">Best Sellers</a>
+                       <a href="#todaysdeal" class="hover:border-2 border-white border-solid w-[130px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Today's Deal</a>
+                       <a class="hover:border-2 border-white border-solid w-[90px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Mobiles</a>
+                       <a class="hover:border-2 border-white border-solid w-[170px] font-bold mt-[8px] mb-[2px] pt-[3px] pl-[12px] h-[34px] text-white text-lg">Customer Service</a>
+                       <a class="hover:border-2 border-white border-solid w-[120px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Electronics</a>
+                       <a class="hover:border-2 border-white border-solid w-[170px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Home & Kitchen</a>
+                       <a class="hover:border-2 border-white border-solid w-[80px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Fashion</a>
+                       <a class="hover:border-2 border-white border-solid w-[80px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Books</a>
+                       <a class="hover:border-2 border-white border-solid w-[90px] font-bold mt-[8px] mb-[2px] pt-[4px] pl-[12px] h-[34px] text-white text-lg">Prime</a>
+                   </div>
+               </div>
+           </div>
+           
+           <div class=" flex shrink grow overflow-hidden h-[50px] w-[350px] justify-end">
+               <div class="flex h-[50px]">
+                   <a class="flex h-[50px]" ><img src="/amazonImage/add.jpg"></a>
+               </div>
+           </div>
+       </div>
+       <!-- end of 2nd navbar -->
+</header>
+
+<!-- End of header  -->
+
+<!-- body part  -->
+
+    
+</body>
+</html>
