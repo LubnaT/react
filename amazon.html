@@ -11,6 +11,8 @@
 </head>
 
 <body  class="m-0 min-h-full block ">
+     <!-- javascript -->
+    <script src="./amazon.js"></script>
 
     <!-- heading navbar -->
 <header class="flex static font-sans">
@@ -100,7 +102,7 @@
                     <a class="flex w-[110px] flex-col absolute top-[10px] left-[370px] px-[9px] mr-[500px] pb-[10px] overflow-hidden h-[58px] ">
                         <div class=" h-[58px] hover:border-2 border-white border-solid relative top-0 flex flex-col mt-0">
                         <div class="mt-[0px] h-[50px] w-[60px] flex items-center w-full font-bold">
-                            <span class="mt-0 flex items-center h-[30px] w-[30px] text-center text-[#f08804] text-[20px] font-semibold absolute left-[13px] top-[0px] right-[18px] bottom-[4px] justify-center">0</span>
+                            <span id="itemsnotifi" class="mt-0 flex items-center h-[30px] w-[30px] text-center text-[#f08804] text-[20px] font-semibold absolute left-[13px] top-[0px] right-[18px] bottom-[4px] justify-center">0</span>
                             <span class="mt-0 flex item-center w-[60px] h-[40px] absolute left-[4px] top-[9px] bottom-[7px]"><img class="object-fit w-[60px] h-[60px]" src="https://www.freeiconspng.com/thumbs/cart-icon/cart-icon-16.png"></span>
                         </div>
                         <div class="flex justify-end items-start text-[14px]">
@@ -219,10 +221,10 @@
                         <P><span class="items-center text-lg font-semibold">Rs 300.00</span></P>
                         <div class="h-[60px] group flex-col flex mt-[15px] p-4">
                             <span class=" ml-[35px] justify-self-center">
-                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            <button id="addcart" onclick='shop["addvalue"]()' class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
                             </span>
                             <span class="mt-[20px] ml-[35px] ">                          
-                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                            <button id="removecart" onclick='shop["removevalue"]()' class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
                            </span>
                         </div>
                     </div>
@@ -233,10 +235,10 @@
                         <P><span class="items-center text-lg font-semibold">Rs 1000.00</span></P>
                         <div class="h-[60px] group flex-col flex mt-[15px] p-4">
                             <span class=" ml-[35px] justify-self-center">
-                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            <button  onclick='shop["addvalue"]()' class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
                             </span>
                             <span class="mt-[20px] ml-[35px] ">                          
-                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                            <button  onclick='shop["removevalue"]()' class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
                            </span>
                         </div>
                     </div>
@@ -247,10 +249,10 @@
                         <P><span class="items-center text-lg font-semibold">Rs 50000.00</span></P>
                         <div class="h-[60px] group flex-col flex mt-[15px] p-4">
                             <span class=" ml-[35px] justify-self-center">
-                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            <button onclick='shop["addvalue"]()' class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
                             </span>
                             <span class="mt-[20px] ml-[35px] ">                          
-                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                            <button  onclick='shop["removevalue"]()' class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
                            </span>
                         </div>
                     </div>
@@ -261,10 +263,10 @@
                         <P><span class="items-center text-lg font-semibold">Rs 600.00</span></P>
                         <div class="h-[60px] group flex-col flex mt-[15px] p-4">
                             <span class=" ml-[35px] justify-self-center">
-                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            <button   onclick='shop["addvalue"]()' class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
                             </span>
                             <span class="mt-[20px] ml-[35px] ">                          
-                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                            <button  onclick='shop["removevalue"]()' class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
                            </span>
                         </div>
                     </div>
@@ -275,10 +277,10 @@
                         <P><span class="items-center text-lg font-semibold">Rs 600.00</span></P>
                         <div class="h-[60px] group flex-col flex mt-[15px] p-4">
                             <span class=" ml-[35px] justify-self-center">
-                            <button class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
+                            <button  onclick='shop["addvalue"]()' class="h-[40px] w-[180px] items-center text-lg group-hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Add to cart</button>
                             </span>
                             <span class="mt-[20px] ml-[35px] ">                          
-                            <button class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
+                            <button  onclick='shop["removevalue"]()' class="h-[40px] w-[180px] items-center text-lg hover:gradient-to-r from-yellow-400 to-pink-400 bg-yellow-600">Remove from cart</button>
                            </span>
                         </div>
                     </div>

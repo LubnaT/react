@@ -12,3 +12,16 @@ function valid(){
     }
 }
 
+
+const notifivalue = (x) =>{
+    itemsnotifi.innerText = x;
+}
+
+const shop = (function(x){
+    let nvalue = x;
+    return { 
+       addvalue: function(){ nvalue++; notifivalue(nvalue); },
+       removevalue:function(){if(nvalue<0) return 0;
+                    nvalue--; notifivalue(nvalue);}
+    }
+})(0);
