@@ -20,8 +20,18 @@ const notifivalue = (x) =>{
 const shop = (function(x){
     let nvalue = x;
     return { 
+       addpage: function(){window.location.assign("/addcart.html")},
        addvalue: function(){ nvalue++; notifivalue(nvalue); },
        removevalue:function(){if(nvalue<0) return 0;
                     nvalue--; notifivalue(nvalue);}
+                    
     }
 })(0);
+
+const temp = ()=> {
+  shop["addpage"]();
+  shop["addvalue"]();
+
+}
+
+const   addpage= ()=>{window.location.assign("/addcart.html")}
