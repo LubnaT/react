@@ -38,7 +38,7 @@ const   addpage= ()=>{window.location.assign("/addcart.html")}
 
 
 const buy = () =>{
-    const totalvalue = Number(lamp.innerText) + Number(sweater.innerText) + Number(tax.innerText);
+    const totalvalue = Number(lamp.innerText) + Number(sweater.innerText) + Number(tax.innerText) +  Number(pack.innerText);
     const value = Number(totalvalue) + Number(total.innerText);
     total.innerText = value;
 }
