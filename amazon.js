@@ -12,7 +12,7 @@ function valid(){
     }
 }
 
-
+// for adding removing value from notification 
 const notifivalue = (x) =>{
     itemsnotifi.innerText = x;
 }
@@ -28,6 +28,7 @@ const shop = (function(x){
     }
 })(0);
 
+// caling both function using single function 
 const temp = ()=> {
   shop["addpage"]();
   shop["addvalue"]();
@@ -36,9 +37,10 @@ const temp = ()=> {
 
 const   addpage= ()=>{window.location.assign("/addcart.html")}
 
-
+// for giving total amount for buying an item 
 const buy = () =>{
     const totalvalue = Number(lamp.innerText) + Number(sweater.innerText) + Number(tax.innerText) +  Number(pack.innerText);
     const value = Number(totalvalue) + Number(total.innerText);
     total.innerText = value;
 }
+
