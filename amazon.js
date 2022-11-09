@@ -44,3 +44,11 @@ const buy = () =>{
     total.innerText = value;
 }
 
+// function for removing item from cart 
+const itemarr=['item2','item1'];
+const remove= ()=>{
+    
+          itemarr.pop();
+          console.log(itemarr);
+}
+
