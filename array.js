@@ -22,6 +22,11 @@
 // // push item in array directly
 // pu.push("Heyy");
 
+// // can also add element at the end of array or right side using length 
+// pu[pu.length] = 30;
+// console.log(pu);
+
+
 // // pop remove item in array from right side 
 
 // // pop or remove item from array using function
@@ -78,6 +83,39 @@
 // const x2 = [2, 5, 6,...sum,"hi","yepp"];
 // console.log(x2);
 
+// // shift method-- remove 1st index item in array
+// const x1=[1,2,"hi","home",8,9];
+// var x= x1.shift();
+// console.log(x1,x);
+
+
+// // unshift method-- add 1st index item in array
+// var x= x1.unshift("yo");
+// console.log(x1,x);
+
+// // splice method-- used to ad items in middle of array. It has 3 arg 
+// // 1st is at which index to start adding items 
+// // 2nd how many items to be deletd on that index where we are addind item
+// //  3rd items to be added 
+// x1.splice(3,0,60,"no");
+// console.log(x1);
+
+// x1.splice(4,1,"yes");
+// console.log(x1);
+
+// // indexOf method-- returns index position of specified item in an array 
+// // searches array from left to right
+// // returns -1 if not found
+// let no = x1.indexOf("hi");
+// console.log(no);
+// console.log(x1.indexOf("hello"));
+
+
+
+
+
+
+
 
 // // insert object inside an array 
 // const arr1 = [1,5,7,"hello"];
@@ -108,11 +146,14 @@
 
 // console.log(arr2);
 
-const item = [5,1,2,4,2,2,5,55,6,2,3,6,1,5,0,6,9,10];
-const item1 = [];
-const value = item.filter(x => x%5 !==0);
-item1.push(value);
-console.log(item1);
+
+// // 10-11-22 Assignment Return a new array which has all the items whose index is multiple of 5 removed
+// //  and all the occurance of 5 removed as well
+// const item = [5,1,2,4,2,2,5,55,6,2,3,6,1,5,0,6,9,10];
+// const item1 = [];
+// const value = item.filter(x => x%5 !==0);
+// item1.push(value);
+// console.log(item1);
 
 
 
