@@ -149,14 +149,26 @@
 
 // // 10-11-22 Assignment Return a new array which has all the items whose index is multiple of 5 removed
 // //  and all the occurance of 5 removed as well
-// const item = [5,1,2,4,2,2,5,55,6,2,3,6,1,5,0,6,9,10];
+const item = [5,1,2,4,2,2,5,55,6,2,3,6,1,5,0,6,9,10];
 // const item1 = [];
-// const value = item.filter(x => x%5 !==0);
+// const value = item.filter((x,y) => x%5 !=0);
 // item1.push(value);
 // console.log(item1);
 
 
 
+// // 11-11-22 Assignment combine 2 filter and apply map to it and return array
+// const item2 = [];
+// const val = item.filter((x,y) => y%5 !=0 && x%5!=0).map( x => x.toString());
+// item2.push(val);
+// console.log(item2);
+
+// const newdata = [{'task1':'exercise'},[1,2,3], function hello(){console.log("Hello")}];
+// console.log(newdata);
+
+let studentsData = [['Jack', 24], ['Sara', 23],];
+studentsData.pop();
+console.log(studentsData)
 
 
 
