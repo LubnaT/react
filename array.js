@@ -70,11 +70,11 @@
 // // sort method
 // console.log(sum.sort());
 
-// // join method
+// // join method--return array as string
 // console.log(sum.join());
 // console.log(sum.join("-->"));
 
-// // concat method 
+// // concat method-- combines 2 array and return a new array
 // const xx = sum.concat(pu);
 // console.log(xx);
 
@@ -109,6 +109,32 @@
 // let no = x1.indexOf("hi");
 // console.log(no);
 // console.log(x1.indexOf("hello"));
+
+// // copywithin method--copy the array items on other array position within same array
+// const x3 = [1,2,4,"hello",6,"hi"];
+// // 3 is from this index position we have to change 
+// // 1 is start of index position from wher to start the copy 
+// //  4 is endof index position to which end the copy
+// x3.copyWithin(3,1,4);
+// console.log(x3);
+// // change 4 index value which start from 0 index and goes on
+// x3.copyWithin(4,0);
+// console.log(x3);
+// // change 4th index from 5 th index value
+// x3.copyWithin(4,5);
+// console.log(x3);
+
+
+// // fill method-- fills specified elements in an array with a value.
+// // The fill method overwrites the original array.
+// const x4 = [1,3,5,5,7,6];
+// console.log(x4.fill("kiwi",4,5));
+// // Start and end position can be specified. If not, all elements will be fill
+// console.log(x4.fill("kiwi"));
+
+
+
+
 
 
 
@@ -166,9 +192,11 @@ const item = [5,1,2,4,2,2,5,55,6,2,3,6,1,5,0,6,9,10];
 // const newdata = [{'task1':'exercise'},[1,2,3], function hello(){console.log("Hello")}];
 // console.log(newdata);
 
-let studentsData = [['Jack', 24], ['Sara', 23],];
-studentsData.pop();
-console.log(studentsData)
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData.pop();
+// console.log(studentsData);
+
+
 
 
 
