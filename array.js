@@ -133,6 +133,38 @@
 // console.log(x4.fill("kiwi"));
 
 
+// print how many times this line is called data.forEach((abc) => { studentsData[0][0][1]='rahul';
+// const studentsData = [[['jack'],[24]],[['sara'],[23]]]; 
+// let x=0;
+// const count=(function(){
+//     let counter = x;
+//     return function(){
+// // iterating over the studentsData
+// studentsData.forEach((student) => {
+//     student.forEach((data) => {
+//       data.forEach((abc) => {
+//         studentsData[0][0][1]='rahul';
+//         //   console.log(abc);
+//           counter++;
+//           console.log(counter);
+//           });
+//         });
+//     });
+    
+//     }
+
+// })(0);
+// console.log(count());
+
+// // iterating over the studentsData
+
+
+// let count= 0;s
+// const coun = (function(){
+  
+// })();
+
+
 
 
 
