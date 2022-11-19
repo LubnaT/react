@@ -104,12 +104,19 @@ const user = {
 // }
 // console.log(fn(user));
 
-// or we can assign key to new variable in function parameter
-function f({name,tech:{java: javva}}){
-    return {name,javva};
-}
+// // or we can assign key to new variable in function parameter
+// function f({name,tech:{java: javva}}){
+//     return {name,javva};
+// }
 
-console.log(f(user));
+// console.log(f(user));
+
+// // or
+// function f({name,tech:{java: javva}}){
+//     return [name,javva];
+// }
+
+// console.log(f(user));
 
 
 
