@@ -25,6 +25,7 @@
 // console.log(obj.mycolor());
 // console.log(obj.myplace("aiza"));
 
+// 19 nov assignment 
 // 
 const bank = {
     name:"Lubna",
@@ -64,6 +65,8 @@ const bank = {
 
 console.log(bank);
 console.log(bank.credit(200));
+console.log(bank.debit(100));
+console.log(bank.credit(500));
 console.log(bank.debit(100));
 console.log(bank.recentTrasanction());
 console.log(bank.changePin());
