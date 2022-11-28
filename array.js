@@ -165,6 +165,46 @@
 // })();
 
 
+// // get the sum of all items in array
+// const arr = [1,2,3,4,10,11];
+// function sum(){
+//              let x= 0;
+//              for(let i=0; i<arr.length;i++){
+//                 x = x+arr[i];
+               
+//              }
+//              return x;
+// }
+
+// console.log(sum());
+
+// const a=[1,2,3];
+// const b=[3,2,1];
+const c=[];
+function array(a,b){
+    // let a=[];
+    // let b=[];
+   for(let i=0;i<3;i++){
+    // for(let j=0;j<b.length;j++){
+        if(a[i]<b[i]) {
+            c.push(1);
+         }
+          if(a[i]===b[i]) return;
+
+         if(a[i]>b[i]){
+            c.push(1);
+        //  }
+         
+    }     
+   }
+   console.log(c);
+      return c;
+
+};
+
+console.log(array(1,3));
+
+
 
 
 
